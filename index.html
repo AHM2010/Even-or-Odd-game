@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body {
-            background-color: #432982;
-            color: white;
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+      body {
+        background-color: #432982;
+        color: white;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-        button {
-            background-color: #FD8E4A;
-            color: white;
-            font-size: 25px;
-            border: none;
-            border-radius: 10px;
-            padding: 10px 20px;
-        }
+      button {
+        background-color: #fd8e4a;
+        color: white;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+      }
 
-        .userdata {
-            background-color: #53567B;
-            max-width: 400px;
-            margin: auto;
-            border-radius: 20px;
-            font-size: 25px;
-            border: solid #7278AF;
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-        }
+      .userdata {
+        background-color: #53567b;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 20px;
+        font-size: 25px;
+        border: solid #7278af;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
 
-        .question {
-            font-size: 25px;
-        }
+      .question {
+        font-size: 25px;
+      }
 
-        .buttons {
-            display: flex;
-            justify-content: space-around;
-            max-width: 400px;
-            margin: auto;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        max-width: 400px;
+        margin: auto;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-        #heading {
-            color: yellow;
-        }
+      #heading {
+        color: yellow;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 id="heading">Even or Odd Game 😉</h1>
     <div class="userdata">
-        <p>Attempts</p>
-        <p id="attemp">0</p>
+      <p>Attempts</p>
+      <p id="attemp">0</p>
     </div>
     <div class="userdata">
-        <p>Score</p>
-        <p id="score">0</p>
+      <p>Score</p>
+      <p id="score">0</p>
     </div>
     <p class="question">I think of a number do you think it is odd or even?</p>
     <div class="buttons">
-        <button onclick="guess('odd')">Odd</button>
-        <button onclick="guess('even')">Even</button>
+      <button onclick="guess('odd')">Odd</button>
+      <button onclick="guess('even')">Even</button>
     </div>
     <audio id="correctSFX" src="./correctanswer.mp3"></audio>
     <audio id="wrongSFX" src="./wrong.mp3"></audio>
 
     <script src="./myScript.js"></script>
-</body>
-
+  </body>
 </html>
